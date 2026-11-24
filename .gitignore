@@ -1,0 +1,6 @@
+.dart_tool/
+build/
+server/data/
+*.log
+.flutter-plugins-dependencies
+coverage/

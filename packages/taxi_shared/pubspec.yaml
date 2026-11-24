@@ -1,0 +1,22 @@
+name: taxi_shared
+description: Shared maps, trip models and HTTP client for the Taxi laboratory.
+version: 1.0.0
+publish_to: none
+environment:
+  sdk: ^3.13.3
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  flutter_map: ^8.3.2
+  cupertino_icons: ^1.0.9
+  latlong2: ^0.9.1
+  http: ^1.6.0
+  geolocator: ^14.0.2
+  shared_preferences: ^2.5.6
+  url_launcher: ^6.3.2
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0

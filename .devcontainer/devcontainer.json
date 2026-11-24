@@ -1,4 +1,5 @@
 {
+  "name": "Taxi Flutter Lab",
   "image": "mcr.microsoft.com/devcontainers/base:ubuntu-22.04",
   "customizations": {
     "vscode": {
@@ -8,7 +9,13 @@
       ]
     }
   },
-  "postCreateCommand": "git clone https://github.com/flutter/flutter.git -b stable /home/vscode/flutter",
+  "postCreateCommand": "bash .devcontainer/setup.sh",
+  "forwardPorts": [8080, 8081, 8082],
+  "portsAttributes": {
+    "8080": {"label": "Taxi Customers"},
+    "8081": {"label": "Taxi API"},
+    "8082": {"label": "Taxi Driver"}
+  },
   "remoteEnv": {
     "PATH": "${containerEnv:PATH}:/home/vscode/flutter/bin"
   },
